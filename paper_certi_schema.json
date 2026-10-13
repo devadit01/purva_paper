@@ -1,0 +1,290 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PaperCertiMetadata",
+  "description": "Schema for generating an agency-grade Archival Luxury Academic Publication Proof & Certification website.",
+  "type": "object",
+  "required": [
+    "paper_title",
+    "journal_name",
+    "authors_line_html",
+    "lead_author_name"
+  ],
+  "properties": {
+    "page_title": {
+      "type": "string",
+      "description": "Browser tab title (<title> tag)"
+    },
+    "meta_description": {
+      "type": "string",
+      "description": "SEO & portfolio preview description"
+    },
+    "paper_title": {
+      "type": "string",
+      "description": "Full formal title of the scientific paper"
+    },
+    "authors_line_html": {
+      "type": "string",
+      "description": "HTML snippet of author list with superscripts (e.g., 'Purva Chordia<sup>1*</sup>, Madhuri Gahlod<sup>2*</sup>')"
+    },
+    "lead_author_name": {
+      "type": "string",
+      "description": "Plain text name of the primary author / researcher"
+    },
+    "author_email": {
+      "type": "string",
+      "description": "Primary corresponding author email address"
+    },
+    "affiliations_html": {
+      "type": "string",
+      "description": "HTML block of institutional affiliations with superscript indicators"
+    },
+    "corresponding_authors_html": {
+      "type": "string",
+      "description": "HTML line for corresponding author emails and primary DOI link"
+    },
+    "journal_name": {
+      "type": "string",
+      "description": "Full official journal name"
+    },
+    "journal_short": {
+      "type": "string",
+      "description": "Short journal acronym or code (e.g. 'JBSAC')"
+    },
+    "journal_emblem_letter": {
+      "type": "string",
+      "description": "Single letter emblem for header/avatar seal (e.g. 'J')"
+    },
+    "journal_issue_subtitle": {
+      "type": "string",
+      "description": "Sub-header banner string under journal name"
+    },
+    "journal_url": {
+      "type": "string",
+      "description": "Official URL link to current issue or paper on journal website"
+    },
+    "journal_domain_display": {
+      "type": "string",
+      "description": "Display text for journal domain link in top bar (e.g. 'journal.uny.ac.id ↗')"
+    },
+    "volume": {
+      "type": "string",
+      "description": "Volume number (e.g. '2')"
+    },
+    "number": {
+      "type": "string",
+      "description": "Issue number (e.g. '2')"
+    },
+    "year": {
+      "type": "string",
+      "description": "Publication year (e.g. '2026')"
+    },
+    "page_range": {
+      "type": "string",
+      "description": "Page range string (e.g. '1–12')"
+    },
+    "publisher_name": {
+      "type": "string",
+      "description": "University, Academic Press, or Publishing House"
+    },
+    "publisher_desc": {
+      "type": "string",
+      "description": "Detailed subtitle description of publisher"
+    },
+    "publisher_short": {
+      "type": "string",
+      "description": "Acronym for university/publisher (e.g. 'UNY')"
+    },
+    "organizer_name": {
+      "type": "string",
+      "description": "Department, Faculty, or Academic Organizing body"
+    },
+    "organizer_desc": {
+      "type": "string",
+      "description": "English translated description of organizer"
+    },
+    "country_name": {
+      "type": "string",
+      "description": "Country where the journal is published (e.g. 'Indonesia')"
+    },
+    "country_name_upper": {
+      "type": "string",
+      "description": "Uppercase country name for header badges (e.g. 'INDONESIA')"
+    },
+    "country_code": {
+      "type": "string",
+      "description": "ISO 2-letter country code (e.g. 'ID')"
+    },
+    "country_flag_emoji": {
+      "type": "string",
+      "description": "Country flag emoji (e.g. '🇮🇩')"
+    },
+    "country_subtext": {
+      "type": "string",
+      "description": "Short geolocated academic prestige line"
+    },
+    "location_stat": {
+      "type": "string",
+      "description": "City and country pill stat (e.g. '📍 Yogyakarta, Indonesia')"
+    },
+    "issue_stat": {
+      "type": "string",
+      "description": "Issue pill stat (e.g. 'Vol. 2 No. 2 (2026)')"
+    },
+    "doi": {
+      "type": "string",
+      "description": "Raw DOI string (e.g. '10.21831/jbsac.v2i2')"
+    },
+    "doi_text": {
+      "type": "string",
+      "description": "Formatted DOI URL text displayed on screen"
+    },
+    "doi_url": {
+      "type": "string",
+      "description": "Full clickable https://doi.org/... link"
+    },
+    "issn_status": {
+      "type": "string",
+      "description": "ISSN badge value (e.g. 'Verified Standard' or '2987-1234')"
+    },
+    "issn_sub": {
+      "type": "string",
+      "description": "ISSN subtext (e.g. 'International Serial')"
+    },
+    "indexing_val": {
+      "type": "string",
+      "description": "Academic indexing bodies (e.g. 'Google Scholar, Scopus, SINTA')"
+    },
+    "indexing_sub": {
+      "type": "string",
+      "description": "Indexing subtext"
+    },
+    "verification_banner_text": {
+      "type": "string",
+      "description": "Official verification statement highlighted in right bento card"
+    },
+    "certificate_id": {
+      "type": "string",
+      "description": "Unique verification certificate alphanumeric ID (e.g. 'JBSAC-V2N2-2026-PC-ID')"
+    },
+    "seal_code": {
+      "type": "string",
+      "description": "3-6 letter code embossed inside the golden wax seal (e.g. 'JBSAC')"
+    },
+    "article_dates_html": {
+      "type": "string",
+      "description": "HTML list of editorial milestones (Received, Revised, Accepted, Published)"
+    },
+    "keywords_html": {
+      "type": "string",
+      "description": "Semicolon-delimited keywords with <br> formatting"
+    },
+    "abstract_html": {
+      "type": "string",
+      "description": "HTML paragraphs of paper abstract (<p>...</p>)"
+    },
+    "first_page_table_html": {
+      "type": "string",
+      "description": "Primary preview table placed directly inside the pinned paper sheet"
+    },
+    "caption_title": {
+      "type": "string",
+      "description": "Headline below pinned paper sheet"
+    },
+    "caption_authors_html": {
+      "type": "string",
+      "description": "Author line with mentor/guide credit below sheet"
+    },
+    "caption_desc": {
+      "type": "string",
+      "description": "Description paragraph below sheet"
+    },
+    "tab2_title": {
+      "type": "string",
+      "description": "Title for Tab 2 (Findings / Optimization / Data)"
+    },
+    "tab2_sub": {
+      "type": "string",
+      "description": "Subtitle for Tab 2"
+    },
+    "tab2_cards_grid_html": {
+      "type": "string",
+      "description": "Comparative cards grid HTML for batches, models, or experimental variants"
+    },
+    "tab2_full_table_html": {
+      "type": "string",
+      "description": "Master data / formulation table HTML"
+    },
+    "tab2_benchmark_html": {
+      "type": "string",
+      "description": "Commercial or theoretical benchmark comparison card HTML"
+    },
+    "tab3_title": {
+      "type": "string",
+      "description": "Title for Tab 3 (Methodology & Process)"
+    },
+    "tab3_sub": {
+      "type": "string",
+      "description": "Subtitle for Tab 3"
+    },
+    "tab3_steps_heading": {
+      "type": "string",
+      "description": "Headline for methodology flow steps"
+    },
+    "tab3_steps_grid_html": {
+      "type": "string",
+      "description": "Numbered step cards grid HTML (1 to 6 steps)"
+    },
+    "tab3_visualizer_heading": {
+      "type": "string",
+      "description": "Headline for mechanism / system visualizer"
+    },
+    "tab3_visualizer_html": {
+      "type": "string",
+      "description": "Side-by-side or pipeline diagram box HTML"
+    },
+    "bibtex_code": {
+      "type": "string",
+      "description": "Standard BibTeX citation entry"
+    },
+    "apa_citation": {
+      "type": "string",
+      "description": "Standard APA 7th edition citation"
+    },
+    "harvard_citation": {
+      "type": "string",
+      "description": "Standard Harvard citation format"
+    },
+    "achievement_avatar_letter": {
+      "type": "string",
+      "description": "Single initial letter for author avatar circle (e.g. 'P')"
+    },
+    "achievement_title": {
+      "type": "string",
+      "description": "Headline for Achievement Unlocked climax card"
+    },
+    "achievement_tag": {
+      "type": "string",
+      "description": "Badge tag (e.g. '3rd Year Student', 'Lead Researcher', 'PhD Candidate')"
+    },
+    "achievement_lead_p": {
+      "type": "string",
+      "description": "Summarizing lead paragraph for portfolio showcase"
+    },
+    "achievement_pills_html": {
+      "type": "string",
+      "description": "Clickable verification pill badges"
+    },
+    "achievement_loc_sub": {
+      "type": "string",
+      "description": "Location subtitle beneath flag"
+    },
+    "editorial_modal_details_html": {
+      "type": "string",
+      "description": "HTML lines inside the Editorial Verification popup modal"
+    },
+    "legal_disclaimer": {
+      "type": "string",
+      "description": "Footer legal and academic copyright notice"
+    }
+  }
+}
